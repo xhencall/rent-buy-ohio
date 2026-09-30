@@ -58,6 +58,8 @@ rent-buy-ohio/
 
 ## Team workflow
 
+[Open the Google Sheets project tracker](https://docs.google.com/spreadsheets/d/1rilH7LUtxTCM9mm-4_Ky26AgNipGnTNG8dwc90tSSN0/edit). It contains 23 planned variables, owner/status dropdowns and color-coded statuses. Access is managed in Google Drive; repository visibility does not grant sheet access.
+
 | Role | Responsibility | Suggested branch |
 |---|---|---|
 | Member 1 | Zillow and FHFA | `housing-data` |

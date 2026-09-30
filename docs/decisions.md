@@ -7,4 +7,6 @@
 | 2026-09-29 | Annual analytical panel, approximately 2015–2025 | Source-native high-frequency files may be preserved, then annualized. |
 | 2026-09-29 | CP1 focuses on collection and planning | No model implementation or fabricated data in scaffold. |
 
-Pending: county boundary vintage and exact county list; feasible regional income/housing measures; final observed years; core versus optional features; team usernames; deadlines; project license; shared raw-data storage; exact environment lock; online tracker URL.
+Tracker: https://docs.google.com/spreadsheets/d/1rilH7LUtxTCM9mm-4_Ky26AgNipGnTNG8dwc90tSSN0/edit
+
+Pending: county boundary vintage and exact county list; feasible regional income/housing measures; final observed years; core versus optional features; team usernames; deadlines; project license; shared raw-data storage; exact environment lock.
