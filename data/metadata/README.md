@@ -19,10 +19,22 @@ For the years 2015-2019, the Dayton MSA was active. Beginning 2019, the Dayton M
 
 Cleveland data were collected beginning 2023.
 
-### Variables
+### Data Downloaded
 For each MSA, the following estimates and measures of error were acquired:
 - B01003: Total Population
 - B19013: Median Household Income in the Past 12 Months (in Inflation-Adjusted Dollars)
-= B25001: Number of Housing Units
+- B25001: Number of Housing Units
 - B25002_003: Occupancy Status - Number of Vacancies
 - B25002_001: Occupancy Status - Total
+
+### Variables
+In the all_acs.csv file, the following measures are included for each MSA x year:
+- total_population_estimate: estimated total population
+- total_population_MoE: margin error of total population
+- median_HH_income_estimate: estimate of the median household income
+- median_HH_income_MoE: margin of error of the median household income
+- total_housing_units_estimate: estimate total number of housing units
+- total_housing_units_MoE: margin of error of the total number of housing units
+- vacant_housing_units_estimate: estimate number of vacant housing units
+- vacant_housing_units_MoE: margin of error of vacant housing units
+- vacancy_rate_pct: percent of vacant units out of all housing units (100* (vacant_housing_units_estimate / total_housing_units_estimate))
