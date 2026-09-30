@@ -1,0 +1,24 @@
+Variable,Source,Geographic Level,Frequency,Years Available,Owner,Status,Download URL,Raw File,Notes
+home_value_usd,Zillow,Ohio-only market,Monthly → annual,Unverified; target 2015–2025,Member 1,Not Started,https://www.zillow.com/research/data/,,12-month mean; Ohio-only geography must be verified.
+rent_usd_month,Zillow,Ohio-only market,Monthly → annual,Unverified; target 2015–2025,Member 1,Not Started,https://www.zillow.com/research/data/,,12-month mean; verify property type and geographic coverage.
+hpi,FHFA,Ohio-only market,Annual / quarterly → annual,Unverified; target 2015–2025,Member 1,Not Started,https://www.fhfa.gov/data/hpi/datasets,,Select consistent product; index is not dollar price.
+population,ACS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 2,Not Started,https://www.census.gov/programs-surveys/acs/data.html,,B01003_001E and MOE; no standard 2020 one-year estimate.
+household_income_usd,ACS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 2,Not Started,https://www.census.gov/programs-surveys/acs/data.html,,B19013_001E and MOE; never average county medians.
+housing_units,ACS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 2,Not Started,https://www.census.gov/programs-surveys/acs/data.html,,B25001_001E and MOE; stock is not construction flow.
+vacant_units,ACS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 2,Not Started,https://www.census.gov/programs-surveys/acs/data.html,,B25002_003E and MOE; denominator B25002_001E.
+vacancy_total_units,ACS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 2,Not Started,https://www.census.gov/programs-surveys/acs/data.html,,B25002_001E and MOE; align universe with numerator.
+vacancy_rate_pct,ACS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 2,Not Started,https://www.census.gov/programs-surveys/acs/data.html,,100 × vacant / total; distinct from rental vacancy rate.
+mortgage_rate_pct,FRED,National covariate,Weekly → annual,Unverified; target 2015–2025,Member 3,Not Started,https://fred.stlouisfed.org/series/MORTGAGE30US,,MORTGAGE30US; national; mean of dated weekly observations.
+cpi,FRED,National covariate,Monthly → annual,Unverified; target 2015–2025,Member 3,Not Started,https://fred.stlouisfed.org/series/CPIAUCSL,,CPIAUCSL; national; mean of 12 monthly levels.
+interest_rate_pct,FRED,National covariate,Monthly → annual,Unverified; target 2015–2025,Member 3,Not Started,https://fred.stlouisfed.org/series/FEDFUNDS,,FEDFUNDS; national; mean of 12 monthly rates.
+employment,BLS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 3,Not Started,https://www.bls.gov/lau/,,LAUS annual average; not workplace payroll jobs.
+unemployment,BLS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 3,Not Started,https://www.bls.gov/lau/,,LAUS annual average; retain numerator for aggregation.
+labor_force,BLS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 3,Not Started,https://www.bls.gov/lau/,,LAUS annual average; denominator for unemployment rate.
+unemployment_rate_pct,BLS,Ohio-only market,Annual,Unverified; target 2015–2025,Member 3,Not Started,https://www.bls.gov/lau/,,100 × unemployed / labor force; aggregate counts first.
+inflation_pct,Derived,Ohio-only market,Annual,Unverified; target 2015–2025,Member 4,Not Started,,,100 × (CPI_t / CPI_t−1 − 1); consecutive years only.
+price_to_income,Derived,Ohio-only market,Annual,Unverified; target 2015–2025,Member 4,Not Started,,,home_value_usd / household_income_usd; compatible geography.
+price_to_rent,Derived,Ohio-only market,Annual,Unverified; target 2015–2025,Member 4,Not Started,,,home_value_usd / (12 × rent_usd_month).
+population_growth_pct,Derived,Ohio-only market,Annual,Unverified; target 2015–2025,Member 4,Not Started,,,100 × (population_t / population_t−1 − 1).
+income_growth_pct,Derived,Ohio-only market,Annual,Unverified; target 2015–2025,Member 4,Not Started,,,100 × (income_t / income_t−1 − 1).
+home_price_growth_pct,Derived,Ohio-only market,Annual,Unverified; target 2015–2025,Member 4,Not Started,,,100 × (ZHVI_t / ZHVI_t−1 − 1).
+rent_growth_pct,Derived,Ohio-only market,Annual,Unverified; target 2015–2025,Member 4,Not Started,,,100 × (ZORI_t / ZORI_t−1 − 1).

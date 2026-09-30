@@ -1,0 +1,24 @@
+variable_name,description,unit,source,source_url,annualization_or_formula,status
+home_value_usd,Typical home value (ZHVI),USD,Zillow,https://www.zillow.com/research/data/,12-month mean; Ohio-only geography must be verified.,Planned
+rent_usd_month,Typical observed asking rent (ZORI),USD/month,Zillow,https://www.zillow.com/research/data/,12-month mean; verify property type and geographic coverage.,Planned
+hpi,House Price Index,Index; base per product,FHFA,https://www.fhfa.gov/data/hpi/datasets,Select consistent product; index is not dollar price.,Planned
+population,Population estimate,Persons,ACS,https://www.census.gov/programs-surveys/acs/data.html,B01003_001E and MOE; no standard 2020 one-year estimate.,Planned
+household_income_usd,Median household income,USD/year,ACS,https://www.census.gov/programs-surveys/acs/data.html,B19013_001E and MOE; never average county medians.,Planned
+housing_units,Housing stock,Housing units,ACS,https://www.census.gov/programs-surveys/acs/data.html,B25001_001E and MOE; stock is not construction flow.,Planned
+vacant_units,Vacant housing units,Housing units,ACS,https://www.census.gov/programs-surveys/acs/data.html,B25002_003E and MOE; denominator B25002_001E.,Planned
+vacancy_total_units,Total units for vacancy denominator,Housing units,ACS,https://www.census.gov/programs-surveys/acs/data.html,B25002_001E and MOE; align universe with numerator.,Planned
+vacancy_rate_pct,General housing vacancy rate,Percent,ACS,https://www.census.gov/programs-surveys/acs/data.html,100 × vacant / total; distinct from rental vacancy rate.,Planned
+mortgage_rate_pct,30-year fixed mortgage rate,Percent,FRED,https://fred.stlouisfed.org/,MORTGAGE30US; national; mean of dated weekly observations.,Planned
+cpi,Consumer Price Index all items,Index 1982–1984=100,FRED,https://fred.stlouisfed.org/,CPIAUCSL; national; mean of 12 monthly levels.,Planned
+interest_rate_pct,Effective federal funds rate,Percent,FRED,https://fred.stlouisfed.org/,FEDFUNDS; national; mean of 12 monthly rates.,Planned
+employment,Employed residents,Persons,BLS,https://www.bls.gov/lau/,LAUS annual average; not workplace payroll jobs.,Planned
+unemployment,Unemployed residents,Persons,BLS,https://www.bls.gov/lau/,LAUS annual average; retain numerator for aggregation.,Planned
+labor_force,Civilian labor force,Persons,BLS,https://www.bls.gov/lau/,LAUS annual average; denominator for unemployment rate.,Planned
+unemployment_rate_pct,Unemployment rate,Percent,BLS,https://www.bls.gov/lau/,100 × unemployed / labor force; aggregate counts first.,Planned
+inflation_pct,Annual CPI inflation,Percent,Derived,Project derivation,100 × (CPI_t / CPI_t−1 − 1); consecutive years only.,Planned
+price_to_income,Home-value-to-income ratio,Ratio,Derived,Project derivation,home_value_usd / household_income_usd; compatible geography.,Planned
+price_to_rent,Home-value-to-annual-rent ratio,Ratio,Derived,Project derivation,home_value_usd / (12 × rent_usd_month).,Planned
+population_growth_pct,Population growth,Percent,Derived,Project derivation,100 × (population_t / population_t−1 − 1).,Planned
+income_growth_pct,Nominal household income growth,Percent,Derived,Project derivation,100 × (income_t / income_t−1 − 1).,Planned
+home_price_growth_pct,Nominal home value growth,Percent,Derived,Project derivation,100 × (ZHVI_t / ZHVI_t−1 − 1).,Planned
+rent_growth_pct,Nominal rent growth,Percent,Derived,Project derivation,100 × (ZORI_t / ZORI_t−1 − 1).,Planned
