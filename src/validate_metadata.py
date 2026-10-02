@@ -28,6 +28,24 @@ def main():
         assert row["boundary_vintage"] and row["source_url"]
         keys.append(row["county_fips"])
     assert len(keys) == len(set(keys)), "County mapped more than once"
+    if crosswalk:
+        expected = {row["market_id"]: int(row["n_ohio_counties"]) for row in markets if row.get("n_ohio_counties")}
+        for market_id, n in expected.items():
+            got = sum(row["market_id"] == market_id for row in crosswalk)
+            assert got == n, f"{market_id}: crosswalk has {got} counties, markets.csv expects {n}"
+        vintages = {row["boundary_vintage"] for row in crosswalk}
+        assert len(vintages) == 1, f"Crosswalk mixes boundary vintages: {vintages}"
+        unverified = sum(row["review_status"] != "verified" for row in crosswalk)
+        if unverified:
+            print(f"PENDING: {unverified} crosswalk rows not yet verified against the OMB list1 file.")
+    source_map_path = ROOT / "data" / "metadata" / "source_geography_map.csv"
+    if source_map_path.exists():
+        source_map = read("source_geography_map.csv")
+        for row in source_map:
+            assert row["market_id"] in allowed | {"all"}, f"Unknown market_id in source map: {row['market_id']}"
+        blocked = [f"{r['market_id']}/{r['source']}" for r in source_map if r["status"] in {"blocked", "missing", "needs_rework"}]
+        if blocked:
+            print(f"OPEN: {len(blocked)} source mappings blocked/missing/needing rework: {', '.join(blocked)}")
     print(f"Planning metadata valid: {len(dictionary)} variables, {len(markets)} markets.")
     if not crosswalk:
         print("PENDING: county crosswalk is empty; geography has not been validated.")

@@ -1,6 +1,6 @@
-market_id,market_name,geographic_scope
-columbus,Columbus,Ohio-only county subset; county crosswalk pending
-cleveland,Cleveland,Ohio-only county subset; county crosswalk pending
-cincinnati,Cincinnati,Ohio-only county subset; county crosswalk pending
-dayton,Dayton,Ohio-only county subset; county crosswalk pending
-toledo,Toledo,Ohio-only county subset; county crosswalk pending
+market_id,market_name,geographic_scope,cbsa_code_2023,n_ohio_counties
+columbus,Columbus,Ohio counties of CBSA 18140 (2023 delineation),18140,10
+cleveland,Cleveland,Ohio counties of CBSA 17410 (2023 delineation),17410,6
+cincinnati,Cincinnati,Ohio part only of CBSA 17140 (2023 delineation); KY/IN excluded,17140,5
+dayton,Dayton,Ohio counties of CBSA 19430 (2023 delineation),19430,3
+toledo,Toledo,Ohio counties of CBSA 45780 (2023 delineation),45780,3
