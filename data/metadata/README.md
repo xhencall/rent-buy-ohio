@@ -9,15 +9,13 @@ Note that 2020 and 2025 are missing. There was no data available for 2020, and 2
 ### Metropolitan Statistical Areas (MSA)
 The following MSAs were considered:
 - Cincinnati, OH-KY-IN Metro Area
+- Cleveland-Elyria, OH Metro Area
 - Cleveland, OH Metro Area
 - Columbus, OH Metro Area
-- Dayton, OH Metro Area
-- Dayton-Kettering-Beavercreek, OH Metro Area
+- Akron, OH Metro Area
 - Toledo, OH Metro Area
 
-For the years 2015-2019, the Dayton MSA was active. Beginning 2019, the Dayton MSA code was retired and replaced with Dayton-Kettering. In 2023, the Dayton-Kettering was expanded to Dayton-kettering-Beavercreek but the MSA code did not change.
-
-Cleveland data were collected beginning 2023.
+For Cleveland, the metro area was called Cleveland-Elyria until 2022. Beginning 2023, it became Cleveland only and MSA code changed.
 
 ### Data Downloaded
 For each MSA, the following estimates and measures of error were acquired:
