@@ -1,0 +1,16 @@
+market_id,delineation,cbsa_code,cbsa_title,ohio_county_fips,acs1_years_using_delineation,matches_frozen_2023_ohio_counties,evidence,review_status
+columbus,2013-02,18140,"Columbus, OH",39041;39045;39049;39073;39089;39097;39117;39127;39129;39159,2015-2018,yes,ACS population continuous across 2018-2019 and 2022-2023,draft - verify against list1 files
+columbus,2018-09 / 2020-03,18140,"Columbus, OH",39041;39045;39049;39073;39089;39097;39117;39127;39129;39159,2019-2022,yes,ACS population continuous,draft - verify against list1 files
+columbus,2023-07,18140,"Columbus, OH",39041;39045;39049;39073;39089;39097;39117;39127;39129;39159,2023-,yes,Census list1_2023 via Wikipedia summary,draft - verify against list1 files
+cleveland,2013-02,17460,"Cleveland-Elyria, OH",39035;39055;39085;39093;39103,2015-2022,no (missing Ashtabula 39007),CBSA code retired in 2023; repo ACS pull has no Cleveland rows for 2015-2022,draft - verify against list1 files
+cleveland,2018-09 / 2020-03,17460,"Cleveland-Elyria, OH",39035;39055;39085;39093;39103,2019-2022,no (missing Ashtabula 39007),same as above,draft - verify against list1 files
+cleveland,2023-07,17410,"Cleveland, OH",39007;39035;39055;39085;39093;39103,2023-,yes,FHFA hpi_at_metro uses 17410 back to 1975,draft - verify against list1 files
+cincinnati,2013-02,17140,"Cincinnati, OH-KY-IN",39015;39017;39025;39061;39165,2015-2018,yes (Ohio part only),Full CBSA also includes KY/IN counties,draft - verify against list1 files
+cincinnati,2018-09 / 2020-03,17140,"Cincinnati, OH-KY-IN",39015;39017;39025;39061;39165,2019-2022,yes (Ohio part only),Full CBSA also includes KY/IN counties,draft - verify against list1 files
+cincinnati,2023-07,17140,"Cincinnati, OH-KY-IN",39015;39017;39025;39061;39165,2023-,yes (Ohio part only),Full CBSA also includes KY/IN counties,draft - verify against list1 files
+dayton,2013-02,19380,"Dayton, OH",39057;39109;39113,2015-2018,yes,ACS population continuous 806.5k (2018) to 807.6k (2019),draft - verify against list1 files
+dayton,2018-09 / 2020-03,19430,"Dayton-Kettering, OH",39057;39109;39113,2019-2022,yes,Code/name change only,draft - verify against list1 files
+dayton,2023-07,19430,"Dayton-Kettering-Beavercreek, OH",39057;39109;39113,2023-,yes,Name change only; ACS population continuous 812.6k (2022) to 814.4k (2023),draft - verify against list1 files
+toledo,2013-02,45780,"Toledo, OH",39051;39095;39173,2015-2018,yes,ACS population ~603k in 2018,draft - verify against list1 files
+toledo,2018-09 / 2020-03,45780,"Toledo, OH",39051;39095;39123;39173,2019-2022,no (includes Ottawa 39123),ACS population jumps 602.9k (2018) to 641.8k (2019) and falls to 600.1k (2023); size of Ottawa County (~40k),draft - verify against list1 files
+toledo,2023-07,45780,"Toledo, OH",39051;39095;39173,2023-,yes,FHFA uses 2023 definition,draft - verify against list1 files
